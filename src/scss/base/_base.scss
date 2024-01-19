@@ -3,7 +3,60 @@ html {
 }
 
 .page {
-  background-color: var(--page-bg);
-  color: var(--text-color);
-  font-family: var(--font-main);
+  font-family: var(--font-family-base);
+  background-color: var(--color-dark);
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--color-light-gray);
+}
+
+a, 
+button, 
+input, 
+textarea, 
+svg * {
+  transition-duration: var(--transition-duration);
+}
+
+a {
+  color: var(--color-light);
+
+  &:hover {
+    color: var(--color-light-gray);
+  }
+}
+
+.container {
+  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+  margin-inline: auto;
+  padding-inline: var(--container-padding-x);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  height: 38px;
+  padding-inline: 26px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 2; 
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  white-space: nowrap;
+	background-color: var(--color-light);
+	border: none;
+	border-radius: var(--border-radius);
+
+	&:hover {
+		background-color: var(--color-light-gray);
+	}
+
+  @media (max-width: 767px) {
+    padding-inline: 18px;
+  }
 }
