@@ -3,18 +3,20 @@
   justify-content: space-between;
   align-items: center;
   column-gap: 20px;
+	min-height: var(--header-height);
 	padding-inline: 32px;
+	background-color: var(--color-dark-alternate);
 }
 
 .header__logo {
 	flex-shrink: 0;
 }
 
-.header__logo-images {
-}
+// .header__logo-images {
+// }
 
-.header__menu {
-}
+// .header__menu {
+// }
 
 .header__menu-list {
   display: flex;
@@ -22,14 +24,14 @@
 	flex-wrap: wrap;
 }
 
-.header__menu-item {
-}
+// .header__menu-item {
+// }
 
 .header__menu-link {
   display: inline-flex;
   align-items: center;
   column-gap: 7px;
-  height: 90px;
+  height: var(--header-height);
   text-decoration: none;
   text-transform: uppercase;
   font-size: 12px;
@@ -41,7 +43,7 @@
 .header__menu-link.is-current::after {
   content: '';
   width: 5px;
-  height: 5px;
+  aspect-ratio: 1;
   background-color: currentColor;
   border-radius: 50%;
 }
@@ -51,8 +53,8 @@
 	column-gap: 40px;
 }
 
-.header__book-button {
-}
+// .header__book-button {
+// }
 
 .header__burger-button {
 	display: inline-flex;
@@ -60,12 +62,12 @@
 	justify-content: center;
 	row-gap: 4px;
 	width: 40px;
-	height: 40px;
+	aspect-ratio: 1;
 	padding-left: 8px;
 	color: var(--color-light);
 	background-color: transparent;
 	border: var(--border);
-	border-radius: var(--border-radius);
+	border-radius: 50%;
 
 	&:hover {
 		color: var(--color-light-gray);

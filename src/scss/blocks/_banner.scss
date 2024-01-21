@@ -1,0 +1,89 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  min-height: calc(100vh - var(--header-height));
+  padding: 36px 70px;
+  color: var(--color-light);
+  background-color: var(--color-dark-alternate);
+  text-transform: uppercase;
+}
+
+.banner__body {
+}
+
+.banner__info {
+  display: flex;
+  align-items: end;
+  font-size: clamp(16px, 1.56vw, 30px);
+  font-weight: 700;
+  line-height: 1.27;
+
+  &::before {
+    content: '';
+    width: clamp(60px, 10.1vw, 194px);
+    aspect-ratio: 1;
+    margin-right: 30px;
+    background: url(./../img/icons/big-arrow.svg) center/contain no-repeat;
+  }
+}
+
+.banner__title {
+  font-size: min(18.75vw, 360px);
+  line-height: 1;
+}
+
+.banner__pagination {
+}
+
+.banner__pagination-list {
+  display: flex;
+  justify-content: center;
+}
+
+.banner__pagination-item {
+  display: flex;
+}
+
+.banner__pagination-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px;
+  background-color: transparent;
+  border: none;
+
+  &::after {
+    content: '';
+    width: 10px;
+    aspect-ratio: 1;
+    border: var(--border);
+    border-radius: 50%;
+    transition-duration: var(--transition-duration);
+  }
+}
+
+.banner__pagination-button.is-current::after {
+  background-color: var(--color-light);
+}
+
+.banner__pagination-button:not(.is-current):hover::after {
+  border-color: var(--color-light-gray);
+}
+
+@media (max-width: 1024px) {
+  .banner {
+    padding-inline: 15px;
+    row-gap: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner__info {
+    margin-bottom: 5px;
+
+    &::before {
+      margin-right: 10px;
+    }
+  }
+}
