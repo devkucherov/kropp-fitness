@@ -1,4 +1,5 @@
 .join-us {
+  background-color: var(--color-dark-alternate);
 }
 
 .join-us__video-wrapper {
@@ -73,8 +74,8 @@
   }
 }
 
-.join-us__form {
-}
+// .join-us__form {
+// }
 
 .join-us__form-header {
   display: flex;
@@ -87,14 +88,8 @@
   }
 }
 
-.join-us__form-title {
-}
-
-.backdrop-title.centered::after {
-  top: -0.55em;
-  left: 50%;
-  translate: -50% 0;
-}
+// .join-us__form-title {
+// }
 
 .join-us__form-subtitle {
   text-align: center;
@@ -114,8 +109,8 @@
   max-width: 400px;
 }
 
-.join-us__form-button {
-}
+// .join-us__form-button {
+// }
 
 
 @media (max-width: 1024px) {
