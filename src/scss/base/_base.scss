@@ -18,6 +18,10 @@ svg * {
   transition-duration: var(--transition-duration);
 }
 
+svg * {
+  transition-property: fill, stroke;
+}
+
 a {
   color: var(--color-light);
 
