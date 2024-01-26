@@ -1,4 +1,4 @@
-# KROPP Fitness
+# KROPP
 
 ## Cтраница фитнес клуба
 
